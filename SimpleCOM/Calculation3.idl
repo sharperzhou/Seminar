@@ -1,0 +1,21 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[object,uuid(9F860E29-318A-4592-8E63-318DB00A2339),dual,nonextensible,helpstring("ICalc 接口"),pointer_default(unique)]
+interface ICalc : IDispatch
+{
+	[id(1), helpstring("方法Add")] HRESULT Add([in] double a, [in] double b, [out,retval] double * fRet);
+	[id(2), helpstring("方法Sub")] HRESULT Sub([in] double a, [in] double b, [out,retval] double * fRet);
+};
+
+[uuid(9934449A-CD56-409c-A6FC-E67B9A8D5902),version(1.0),helpstring("Calculation3 Type Library")]
+library Calculation3
+{
+	importlib("stdole2.tlb");
+
+	[uuid(4A313E30-A5D1-4fa7-A3C2-1523A3E64B06),helpstring("Calculation3 Class")]
+	coclass Calculation3
+	{
+		[default] interface ICalc;
+	};
+};
