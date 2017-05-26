@@ -1,0 +1,7 @@
+LIBRARY	"XLL"
+
+EXPORTS
+	xlAutoOpen
+	xlAutoClose
+	xlAddInManagerInfo
+	AddNum
