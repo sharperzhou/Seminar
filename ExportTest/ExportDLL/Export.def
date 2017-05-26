@@ -1,0 +1,8 @@
+LIBRARY	"ExportDLL"
+
+EXPORTS
+
+Add
+Sub
+Mult
+Div
