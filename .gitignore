@@ -1,1 +1,12 @@
 *.user
+*.ncb
+*.htm
+*.obj
+*.manifest
+*.manifest.res
+*.idb
+*.pdb
+*.dep
+*.ilk
+*.lib
+*.exp
