@@ -1,0 +1,15 @@
+//import "oaidl.idl";
+//import "ocidl.idl";
+import "unknwn.idl";
+
+[
+    object,
+    uuid(D3A4AF14-C36F-44f6-8644-B3AE2E341C0D),
+    pointer_default(unique),
+    helpstring("ICalc ½Ó¿Ú")
+]
+interface ICalc : IUnknown
+{
+    HRESULT Add([in] double a, [in] double b, [out] double *fRet);
+    HRESULT Sub([in] double a, [in] double b, [out] double *fRet);
+};

@@ -1,0 +1,8 @@
+LIBRARY	"TestRemoteAutomationProxy"
+
+EXPORTS
+	DllGetClassObject
+	DllCanUnloadNow
+	GetProxyDllInfo
+	DllRegisterServer
+	DllUnregisterServer

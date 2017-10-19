@@ -1,0 +1,8 @@
+LIBRARY	"CalculationSimpleCOMProxy"
+
+EXPORTS
+	DllGetClassObject
+	DllCanUnloadNow
+	GetProxyDllInfo
+	DllRegisterServer
+	DllUnregisterServer

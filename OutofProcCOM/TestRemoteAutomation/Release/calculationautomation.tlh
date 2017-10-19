@@ -1,0 +1,71 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.50727.42 (3154370c).
+//
+// d:\用户\documents\visual studio 2005\projects\outofproccom\testremoteautomation\release\calculationautomation.tlh
+//
+// C++ source equivalent of Win32 type library ../release/CalculationAutomation.tlb
+// compiler-generated file created 10/15/17 at 16:55:33 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("6f4ebea4-bd6c-4633-a560-c37f0715769a"))
+/* LIBID */ __CalculationAutomation;
+struct __declspec(uuid("cfcc097a-8e57-485f-8c4f-c73d7a50641c"))
+/* dual interface */ ICalc2;
+struct /* coclass */ CalculationAutomation;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICalc2, __uuidof(ICalc2));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("cfcc097a-8e57-485f-8c4f-c73d7a50641c"))
+ICalc2 : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    double Add (
+        double a,
+        double b );
+    double Sub (
+        double a,
+        double b );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Add (
+        /*[in]*/ double a,
+        /*[in]*/ double b,
+        /*[out,retval]*/ double * fRet ) = 0;
+      virtual HRESULT __stdcall raw_Sub (
+        /*[in]*/ double a,
+        /*[in]*/ double b,
+        /*[out,retval]*/ double * fRet ) = 0;
+};
+
+struct __declspec(uuid("565ed9c6-93ff-4e1d-9d79-ea9747bcb41b"))
+CalculationAutomation;
+    // [ default ] interface ICalc2
+
+//
+// Wrapper method implementations
+//
+
+#include "d:\用户\documents\visual studio 2005\projects\outofproccom\testremoteautomation\release\calculationautomation.tli"
+
+#pragma pack(pop)

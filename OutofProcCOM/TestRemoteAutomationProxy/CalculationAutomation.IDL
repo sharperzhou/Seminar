@@ -1,0 +1,36 @@
+// 通过oleview工具可查看tlb文件的信息，得到如下idl文件，进而将idl编译生成xx_i.c, xx_h.h, xx_p.c, dlldata.c
+
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+    uuid(CFCC097A-8E57-485f-8C4F-C73D7A50641C),
+    dual,
+    oleautomation,
+    helpstring("ICalc2 接口")
+]
+interface ICalc2 : IDispatch
+{
+    [id(1), helpstring("方法Add")] HRESULT Add([in] double a, [in] double b, [out,retval] double * fRet);
+    [id(2), helpstring("方法Sub")] HRESULT Sub([in] double a, [in] double b, [out,retval] double * fRet);
+}
+
+[
+    uuid(6F4EBEA4-BD6C-4633-A560-C37F0715769A),
+    version(1.0),
+    helpstring("CalculationAutomation Type Library")
+]
+library CalculationAutomation
+{
+    importlib("stdole2.tlb");
+
+    [
+        uuid(565ED9C6-93FF-4e1d-9D79-EA9747BCB41B),
+        helpstring("CalculationAutomation Object")
+    ]
+    coclass CalculationAutomation
+    {
+        [default] interface ICalc2;
+    }
+}
