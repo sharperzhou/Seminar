@@ -1,6 +1,7 @@
 # Seminar
 The seminar of coding method, topic, or skill
-ExportTest --- æµ‹è¯•Cå’ŒC++å¯¼å‡ºdllå‡½æ•°
-SimpleCOM  --- å¤šç»§æ‰¿ã€åµŒå¥—ç±»ã€è‡ªåŠ¨åŒ–æ–¹å¼å®žçŽ°COM
-XLL        --- Excel XLLåŠ è½½é¡¹è¯•éªŒ
-ReuseCOM   --- åŒ…å®¹å’Œèšåˆæ–¹å¼å®žçŽ°COMå¤ç”¨
+ExportTest    --- ²âÊÔCºÍC++µ¼³ödllº¯Êý
+SimpleCOM     --- ¶à¼Ì³Ð¡¢Ç¶Ì×Àà¡¢×Ô¶¯»¯·½Ê½ÊµÏÖCOM
+XLL           --- Excel XLL¼ÓÔØÏîÊÔÑé
+ReuseCOM      --- °üÈÝºÍ¾ÛºÏ·½Ê½ÊµÏÖCOM¸´ÓÃ
+OutofProcCOM  --- ½ø³ÌÍâCOMºÍAutomation¡¢LPCºÍRPC¿Í»§¶Ë
