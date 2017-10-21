@@ -1,0 +1,120 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    MENUITEM "设置 (&S)",                     40001
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_SETTING DIALOGEX 0, 0, 157, 156
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "颜色 (&C)",IDC_STATIC,7,7,66,119
+    RADIOBUTTON     "红",IDC_RD_RED,20,22,24,10,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "绿",IDC_RD_GREEN,20,39,24,10
+    RADIOBUTTON     "蓝",IDC_RD_BLUE,20,56,24,10
+    RADIOBUTTON     "黄",IDC_RD_YELLOW,20,73,24,10
+    RADIOBUTTON     "白",IDC_RD_WHITE,20,90,24,10
+    RADIOBUTTON     "黑",IDC_RD_BLACK,20,107,24,10
+    GROUPBOX        "形状 (&F)",IDC_STATIC,84,7,66,67
+    RADIOBUTTON     "矩形",IDC_RD_RECTANGLE,97,22,32,10,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "椭圆",IDC_RD_ELIPSE,97,39,32,10
+    RADIOBUTTON     "三角形",IDC_RD_TRIANGLE,97,56,40,10
+    DEFPUSHBUTTON   "确定",IDOK,20,135,50,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,86,135,50,14,WS_GROUP
+    LTEXT           "",IDC_PIC,84,81,66,43
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

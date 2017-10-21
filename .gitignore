@@ -10,3 +10,5 @@
 *.ilk
 *.lib
 *.exp
+*.aps
+*.res
