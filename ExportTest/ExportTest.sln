@@ -15,6 +15,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImportCppDLL", "ImportCppDL
 		{86C407E3-7134-4C80-8E37-2C8759049783} = {86C407E3-7134-4C80-8E37-2C8759049783}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExportMFCRegularDLL", "ExportMFCRegularDLL\ExportMFCRegularDLL.vcproj", "{3ADA7F5C-6CBF-453F-B264-3490840CE6B5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImportMFCRegularDLL", "ImportMFCRegularDLL\ImportMFCRegularDLL.vcproj", "{66B83F8D-E22F-4BD0-87B2-AC9DB7F2896C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3ADA7F5C-6CBF-453F-B264-3490840CE6B5} = {3ADA7F5C-6CBF-453F-B264-3490840CE6B5}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -37,6 +44,14 @@ Global
 		{D060DF5F-CD1C-4D14-8C53-442FB3289A39}.Debug|Win32.Build.0 = Debug|Win32
 		{D060DF5F-CD1C-4D14-8C53-442FB3289A39}.Release|Win32.ActiveCfg = Release|Win32
 		{D060DF5F-CD1C-4D14-8C53-442FB3289A39}.Release|Win32.Build.0 = Release|Win32
+		{3ADA7F5C-6CBF-453F-B264-3490840CE6B5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3ADA7F5C-6CBF-453F-B264-3490840CE6B5}.Debug|Win32.Build.0 = Debug|Win32
+		{3ADA7F5C-6CBF-453F-B264-3490840CE6B5}.Release|Win32.ActiveCfg = Release|Win32
+		{3ADA7F5C-6CBF-453F-B264-3490840CE6B5}.Release|Win32.Build.0 = Release|Win32
+		{66B83F8D-E22F-4BD0-87B2-AC9DB7F2896C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{66B83F8D-E22F-4BD0-87B2-AC9DB7F2896C}.Debug|Win32.Build.0 = Debug|Win32
+		{66B83F8D-E22F-4BD0-87B2-AC9DB7F2896C}.Release|Win32.ActiveCfg = Release|Win32
+		{66B83F8D-E22F-4BD0-87B2-AC9DB7F2896C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,9 @@
+; ExportMFCRegularDLL.def : 声明 DLL 的模块参数。
+
+LIBRARY      "ExportMFCRegularDLL"
+
+EXPORTS
+    ; 此处可以是显式导出
+    AddData
+    SubData
+    ShowDlg

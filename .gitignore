@@ -12,3 +12,4 @@
 *.exp
 *.aps
 *.res
+*.pch
