@@ -1,3 +1,4 @@
+debug
 *.user
 *.ncb
 *.htm
@@ -13,3 +14,4 @@
 *.aps
 *.res
 *.pch
+*.log
