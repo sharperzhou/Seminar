@@ -1,0 +1,181 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "ArxProject1 ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "ArxProject1"
+            VALUE "LegalCopyright", "Copyright ?2012"
+            VALUE "OriginalFilename", "MFGArxProject1.arx"
+            VALUE "ProductName", "ArxProject1 Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INSERT_BLK_DLG DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "插入块"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,161,50,14
+    PUSHBUTTON      "取消",IDCANCEL,259,161,50,14
+    LTEXT           "块名称：",IDC_STATIC,7,10,41,8
+    COMBOBOX        IDC_COMBO_BLKNAME,51,7,86,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_LIST_ATTR,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,29,224,121
+    LTEXT           "属性值：",IDC_STATIC,237,107,33,8
+    EDITTEXT        IDC_EDIT_VALUE,237,120,72,14,ES_AUTOHSCROLL | ES_NOHIDESEL
+    LTEXT           "",IDC_PIC,245,38,54,42
+END
+
+
+IDD_INSERTTABLE_DLG DIALOGEX 0, 0, 483, 220
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "插入表格"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "表格内容",IDC_STATIC,7,7,346,186
+    CONTROL         "GridCtrl",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,14,20,332,165
+    GROUPBOX        "文字属性",IDC_STATIC,359,7,117,76
+    LTEXT           "样式：",IDC_STATIC,365,20,25,8
+    COMBOBOX        IDC_TEXT_STYLE,409,20,59,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "高度：",IDC_STATIC,365,34,25,8
+    EDITTEXT        IDC_TEXT_HEIGHT,409,34,59,14,ES_AUTOHSCROLL
+    LTEXT           "宽高比：",IDC_STATIC,365,48,33,8
+    EDITTEXT        IDC_TEXT_WIDTHFACTOR,409,48,59,14,ES_AUTOHSCROLL
+    LTEXT           "颜色：",IDC_STATIC,365,62,25,8
+    COMBOBOX        IDC_TEXT_COLOR,409,62,59,30,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "表格属性",IDC_STATIC,359,87,117,106
+    LTEXT           "行数：",IDC_STATIC,365,101,25,8
+    EDITTEXT        IDC_TABLE_ROWNUM,409,101,59,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_TABLE_ROWNUM_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,457,100,11,14
+    LTEXT           "列数：",IDC_STATIC,365,115,25,8
+    EDITTEXT        IDC_TABLE_COLUMNNUM,409,115,59,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_TABLE_COLUMNNUM_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,457,115,11,14
+    LTEXT           "对齐：",IDC_STATIC,365,130,25,8
+    COMBOBOX        IDC_TABLE_ALIGNMENT,409,130,59,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "线宽：",IDC_STATIC,365,144,25,8
+    COMBOBOX        IDC_TABLE_LINEWIDTH,409,144,59,30,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "线型：",IDC_STATIC,365,158,25,8
+    COMBOBOX        IDC_TABLE_LINETYPE,409,158,59,30,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "线框颜色：",IDC_STATIC,365,172,41,8
+    COMBOBOX        IDC_TABLE_LINECOLOR,409,172,59,30,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,372,199,50,14
+    PUSHBUTTON      "取消",IDCANCEL,426,199,50,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_INSERT_BLK_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+	
+	IDD_INSERTTABLE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 476
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "ArxProject1"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
