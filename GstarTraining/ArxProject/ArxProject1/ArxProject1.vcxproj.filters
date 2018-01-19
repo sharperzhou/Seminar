@@ -33,9 +33,6 @@
     <ClCompile Include="InsertBlkDlg.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="StaticEx.cpp">
-      <Filter>头文件</Filter>
-    </ClCompile>
     <ClCompile Include="GridCtrl_src\GridCell.cpp">
       <Filter>GridCtrl</Filter>
     </ClCompile>
@@ -76,6 +73,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Jig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticEx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

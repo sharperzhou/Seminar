@@ -44,5 +44,6 @@ void CStaticEx::OnPaint()
     CDC menDC;
     menDC.CreateCompatibleDC(&dc);
     menDC.SelectObject((HGDIOBJ) m_hBmp);
+    SetStretchBltMode(dc.GetSafeHdc(), STRETCH_HALFTONE);
     dc.StretchBlt(0, 0, m_cx, m_cy, &menDC, 0, 0, m_cxBmp, m_cyBmp, SRCCOPY);
 }

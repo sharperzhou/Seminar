@@ -5,6 +5,7 @@ AcEdJig::DragStatus CInsertJig::sampler()
 {
     DragStatus stat;
 
+    //输入控制允许三维坐标
     setUserInputControls((UserInputControls) (AcEdJig::kAccept3dCoordinates));
 
     static AcGePoint3d ptTemp;
@@ -47,12 +48,16 @@ CCircleJig::~CCircleJig()
 AcEdJig::DragStatus CCircleJig::sampler()
 {
     DragStatus stat;
+
+    //距离非零非负值
     setUserInputControls((UserInputControls)
         (AcEdJig::kNoNegativeResponseAccepted
         | AcEdJig::kNoZeroResponseAccepted));
 
     static double dTemp = 0;
     stat = acquireDist(dTemp, m_ptCenter);
+
+    //精度控制1e-15
     if (abs(dTemp - m_dRadius) < 1e-15 && AcEdJig::kNormal == stat)
         return AcEdJig::kNoChange;
 

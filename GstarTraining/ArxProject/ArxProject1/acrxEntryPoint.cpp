@@ -72,12 +72,24 @@ public:
 	virtual void RegisterServerComponents () {
 	}
 	
-    //弹出对话框命令
+    //----------------------------------------------------------
+    // Summary:
+    //    弹出对话框命令
+    // Parameter:
+    // Returns:
+    //    void
+    //----------------------------------------------------------
     static void MFGGroupARX1 () {
         acedAlert(_T("Hello World"));
 	}
 
-    //绘制圆命令
+    //----------------------------------------------------------
+    // Summary:
+    //    绘制圆命令
+    // Parameter:
+    // Returns:
+    //    void
+    //----------------------------------------------------------
     static void MFGGroupARX2 () {
         AcGePoint3d ptCenter;
         ads_real radius = 0;
@@ -124,7 +136,13 @@ public:
         circleId.handle().print();
     }
 
-    //选择实体，将圆半径扩大一倍
+    //----------------------------------------------------------
+    // Summary:
+    //    选择实体，将圆半径扩大一倍
+    // Parameter:
+    // Returns:
+    //    void
+    //----------------------------------------------------------
     static void MFGGroupARX3 ()
     {
         resbuf *rbFilter = NULL;
@@ -166,7 +184,13 @@ public:
         acedSSFree(ssname);
     }
 
-    //打印所有图层名、块名、尺寸标注样式名、组名
+    //----------------------------------------------------------
+    // Summary:
+    //    打印所有图层名、块名、尺寸标注样式名、组名
+    // Parameter:
+    // Returns:
+    //    void
+    //----------------------------------------------------------
     static void MFGGroupARX4 ()
     {
         AcStringArray aOutputName;
@@ -184,7 +208,13 @@ public:
         CArxProjectHelper::printSymbolRecord(_T("组名称"), aOutputName);
     }
 
-    //依次选择两个实体，在交点处绘制圆
+    //----------------------------------------------------------
+    // Summary:
+    //    依次选择两个实体，在交点处绘制圆
+    // Parameter:
+    // Returns:
+    //    void
+    //----------------------------------------------------------
     static void MFGGroupARX5 ()
     {
         int rt; //选择实体返回值
@@ -213,7 +243,7 @@ public:
                             || pEnt[i]->isKindOf(AcDbEllipse::desc())
                             || pEnt[i]->isKindOf(AcDbPolyline::desc()))
                         {
-                            acedRedraw(ent[i], 3); //选择后高亮显示
+                            pEnt[i]->highlight(); //选择后高亮显示
                             bCancel = true;
                         }
                         else {
@@ -249,13 +279,19 @@ public:
 
 CleanHandler:
         for (int i = 0; i < 2; ++i) {
-            if (pEnt[i]) pEnt[i]->close();
             if (!acdbNameNil(ent[i]))
-                acedRedraw(ent[i], 4); //恢复未高亮状态
+                pEnt[i]->unhighlight(); //恢复未高亮状态
+            if (pEnt[i]) pEnt[i]->close();
         }
     }
 
-    //在对话框中设置属性值，插入带属性的块参照
+    //----------------------------------------------------------
+    // Summary:
+    //    在对话框中设置属性值，插入带属性的块参照
+    // Parameter:
+    // Returns:
+    //    void
+    //----------------------------------------------------------
     static void MFGGroupARX6 ()
     {
         CInsertBlkDlg dlg;
@@ -265,7 +301,13 @@ CleanHandler:
         }
     }
 
-    //根据CGridCtrl控件中的内容绘制表格
+    //----------------------------------------------------------
+    // Summary:
+    //    根据CGridCtrl控件中的内容绘制表格
+    // Parameter:
+    // Returns:
+    //    void
+    //----------------------------------------------------------
     static void MFGGroupARX7 ()
     {
         CInsertTableDlg dlg;

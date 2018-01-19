@@ -27,30 +27,30 @@ protected:
 
     //数据变量
 private:
-    CArxProjectHelper::TableContent m_aTableContent;
-    AcDbObjectId m_TextStyleId;
-    double m_dTextHeight;
-    double m_dWidthFactor;
-    AcCmColor m_TextColor;
-    int m_iRowNum;
-    int m_iColumnNum;
-    AcDb::CellAlignment m_CellAlignment;
-    AcDb::LineWeight m_LineWeight;
-    AcDbObjectId m_LineTypeId;
-    AcCmColor m_LineColor;
-    AcDbObjectIdArray m_aTextStyleId;
+    CArxProjectHelper::TableContent m_aTableContent; //表格内容，二维数组
+    AcDbObjectId m_TextStyleId; //文字样式Id
+    double m_dTextHeight; //文字高度
+    double m_dWidthFactor; //文字宽度因子
+    AcCmColor m_TextColor; //文字颜色
+    int m_iRowNum; //表格行数
+    int m_iColumnNum; //表格列数
+    AcDb::CellAlignment m_CellAlignment; //单元格对齐方式
+    AcDb::LineWeight m_LineWeight; //表格线框的线宽
+    AcDbObjectId m_LineTypeId; //表格线框的线型Id
+    AcCmColor m_LineColor; //表格线框的颜色
+    AcDbObjectIdArray m_aTextStyleId; //当前图形所有文字样式的Id数组
 
     //控件变量
 private:
-    CGridCtrl m_gridContent;
-    CComboBox m_comboTextStyle;
-    CAcUiNumericEdit m_editTextHeight;
-    CAcUiNumericEdit m_editTextWidthFactor;
-    CAcUiTrueColorComboBox m_comboTextColor;
-    CComboBox m_comboAlignment;
-    CAcUiLineWeightComboBox m_comboLineWidth;
-    CAcUiLineTypeComboBox m_comboLineType;
-    CAcUiTrueColorComboBox m_comboLineColor;
+    CGridCtrl m_gridContent; //设定表格内容的表格控件
+    CComboBox m_comboTextStyle; //文字样式的组合框控件
+    CAcUiNumericEdit m_editTextHeight; //文字高度的编辑框控件
+    CAcUiNumericEdit m_editTextWidthFactor; //文字宽度因子的编辑框控件
+    CAcUiTrueColorComboBox m_comboTextColor; //文字颜色的组合框控件
+    CComboBox m_comboAlignment; //单元格对齐方式的组合框控件
+    CAcUiLineWeightComboBox m_comboLineWidth; //表格线宽的组合框控件
+    CAcUiLineTypeComboBox m_comboLineType; //表格线型的组合框控件
+    CAcUiTrueColorComboBox m_comboLineColor; //表格线框颜色的组合框控件
 
     //属性
 public:
@@ -72,7 +72,6 @@ private:
     void InitCtrl(void);
     virtual BOOL OnInitDialog();
     afx_msg void OnBnClickedOk();
-public:
     afx_msg void OnEnUpdateTableRownum();
     afx_msg void OnEnUpdateTableColumnnum();
     afx_msg void OnEnKillfocusTextHeight();

@@ -286,6 +286,7 @@ AcDbObjectId CArxProjectHelper::createTable(int iRowCount, int iColCount,
     es = pTbl->generateLayout();
     assert(Acad::eOk == es);
 
+    //通过动态拖放插入表格
     CTableInsertJig tblJig(pTbl);
     tblJig.setDispPrompt(_T("指定表格插入点: \n"));
     if (AcEdJig::kNormal == tblJig.drag()) {

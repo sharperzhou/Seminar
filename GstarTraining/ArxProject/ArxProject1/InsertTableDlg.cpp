@@ -5,8 +5,15 @@
 #include "InsertTableDlg.h"
 #include "afxdialogex.h"
 
-//数字转字母，类似Excel列标题A-Z，AA-ZZ效果
-//0,1,2,3对应A,B,C ...
+//----------------------------------------------------------
+// Summary:
+//    数字转字母，类似Excel列标题A-Z，AA-ZZ效果，
+//    即0,1,2,3对应A,B,C ...
+// Parameter:
+//    num - 数字序号
+// Returns:
+//    CString
+//----------------------------------------------------------
 static CString NumToLetter(unsigned short num)
 {
     CString str;
@@ -61,7 +68,6 @@ void CInsertTableDlg::DoDataExchange(CDataExchange* pDX)
 
 
 BEGIN_MESSAGE_MAP(CInsertTableDlg, CDialog)
-    
     ON_BN_CLICKED(IDOK, &CInsertTableDlg::OnBnClickedOk)
     ON_EN_UPDATE(IDC_TABLE_ROWNUM, &CInsertTableDlg::OnEnUpdateTableRownum)
     ON_EN_UPDATE(IDC_TABLE_COLUMNNUM, &CInsertTableDlg::OnEnUpdateTableColumnnum)
@@ -122,7 +128,7 @@ void CInsertTableDlg::InitCtrl(void)
     pSpin->SetRange(1, 999);
 
 
-    //表格对齐方式组合框初始化，并设定ItemData为对其方式枚举值
+    //表格对齐方式组合框初始化，并设定ItemData为对齐方式枚举值
     TCHAR *szAlignment[] = {_T("左上"), _T("中上"), _T("右上"),
                             _T("左中"), _T("正中"), _T("右中"),
                             _T("左下"), _T("中下"), _T("右下")};

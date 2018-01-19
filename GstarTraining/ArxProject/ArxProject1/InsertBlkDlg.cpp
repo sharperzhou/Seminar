@@ -65,11 +65,11 @@ BOOL CInsertBlkDlg::OnInitDialog()
         if (strBuf.Compare(ACDB_MODEL_SPACE)
             && strBuf.Compare(ACDB_PAPER_SPACE)
             && strBuf.Compare(_T("*Paper_Space0"))
-            && strBuf.Compare(_T("*T"))) {
+            && strBuf.Find(_T("*")) == -1) { //其他含有*号的块
                 m_comboBlkName.AddString(strBuf);
         }
         else {
-            continue; //当遇到模型空间、图纸空间和表格，忽略
+            continue; //当遇到模型空间、图纸空间和表格等，忽略
         }
     }
 
