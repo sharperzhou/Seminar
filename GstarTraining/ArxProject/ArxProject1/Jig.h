@@ -16,7 +16,7 @@ public:
     virtual AcDbEntity *entity() const {return m_pEnt;}
 
 protected:
-    CInsertJig(AcDbEntity *pEnt) : m_pEnt(pEnt) {}
+    CInsertJig(AcDbEntity *pEnt) : m_pEnt(pEnt) {m_pEnt->setDatabaseDefaults();}
     ~CInsertJig(void) {};
 
 protected:

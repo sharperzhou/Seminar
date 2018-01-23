@@ -14,14 +14,11 @@ IMPLEMENT_DYNAMIC(CInsertBlkDlg, CDialogEx)
 
 CInsertBlkDlg::CInsertBlkDlg(CWnd* pParent /*=NULL*/)
 	: CDialogEx(CInsertBlkDlg::IDD, pParent)
-    , m_hBmp(0)
 {
-
 }
 
 CInsertBlkDlg::~CInsertBlkDlg()
 {
-    DeleteObject(m_hBmp);
 }
 
 void CInsertBlkDlg::DoDataExchange(CDataExchange* pDX)
@@ -99,16 +96,9 @@ void CInsertBlkDlg::OnCbnSelchangeComboBlkname()
     assert(bRet);
     if (!bRet) return; //获取块定义的Id失败，返回
 
-    //显示块定义的缩略图
-    CDC *pDC = m_pic.GetDC();
-    BITMAP bmp; //为了获取位图宽高
-    CRect rcClient; //为了获取控件宽高
-    if (m_hBmp) DeleteObject(m_hBmp);
-    m_hBmp = CArxProjectHelper::getBlockPreviewBitmap(m_blkDefId, pDC->GetSafeHdc());
-    ::GetObject((HANDLE) m_hBmp, sizeof(BITMAP), (LPVOID) &bmp);
-    m_pic.GetClientRect(rcClient);
-    m_pic.DrawBitmap(m_hBmp, rcClient.right, rcClient.bottom, bmp.bmWidth, bmp.bmHeight);
-    ReleaseDC(pDC);
+    //显示块定义的预览图
+    if (m_pic.Init())
+        m_pic.PreviewIcon(strBlkName);
 
     if (m_aBlkAttr.IsEmpty()) {
         //无属性时，将编辑框清空并置灰

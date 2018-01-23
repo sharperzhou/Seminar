@@ -29,7 +29,6 @@ private:
     CEdit m_editValue; //块定义的属性值的编辑框
     AcDbObjectId m_blkDefId;  //块定义的Id
     CArray<CArxProjectHelper::BlockAttribute> m_aBlkAttr; //某个块定义的属性数组
-    HBITMAP m_hBmp; //块定义的缩略图句柄
     CStaticEx m_pic; //派生自静态文本的控件类，用于显示缩略图
 private:
     virtual BOOL OnInitDialog();
