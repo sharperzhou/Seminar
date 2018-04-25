@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWndClass</class>
+ <widget class="QWidget" name="mainWndClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>226</width>
+    <height>96</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>226</width>
+    <height>96</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>226</width>
+    <height>96</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>mainWnd</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>185</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="lblVal1">
+        <property name="text">
+         <string>Value1:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="editVal1"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="lblVal2">
+        <property name="text">
+         <string>Value2:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="editVal2"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwnd.qrc"/>
+ </resources>
+ <connections/>
+</ui>
