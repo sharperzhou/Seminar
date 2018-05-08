@@ -14,10 +14,10 @@ public:
 
 private:
     Ui::mainWndClass ui;
-    QTimer* m_timer;
+    static bool compare(const QString& val1, const QString& val2);
 
 private slots:
-    void onTimer();
+    void onBtnSortClicked();
 };
 
 #endif // MAINWND_H

@@ -14,10 +14,10 @@ public:
 
 private:
     Ui::mainWndClass ui;
-    QTimer* m_timer;
 
 private slots:
-    void onTimer();
+    void onBtnLoadClicked();
+    void onBtnSaveClicked();
 };
 
 #endif // MAINWND_H

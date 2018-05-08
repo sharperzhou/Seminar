@@ -14,10 +14,6 @@ public:
 
 private:
     Ui::mainWndClass ui;
-    QTimer* m_timer;
-
-private slots:
-    void onTimer();
 };
 
 #endif // MAINWND_H
