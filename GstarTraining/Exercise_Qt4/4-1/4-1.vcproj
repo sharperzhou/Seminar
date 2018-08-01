@@ -2,9 +2,9 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="8.00"
-	Name="3-2-unfinish"
-	ProjectGUID="{FC655448-6313-4317-BB4C-83B4428F1679}"
-	RootNamespace="3-2"
+	Name="4-1"
+	ProjectGUID="{C972C88D-ED26-4989-A9FA-A813B21DBFE0}"
+	RootNamespace="4-1"
 	Keyword="Qt4VSv1.0"
 	>
 	<Platforms>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWndClass</class>
+ <widget class="QMainWindow" name="mainWndClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>mainWnd</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="actionBtn1"/>
+   <addaction name="separator"/>
+   <addaction name="actionBtn2"/>
+   <addaction name="actionBtn3"/>
+   <addaction name="actionBtn4"/>
+   <addaction name="actionBtn5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionBtn1">
+   <property name="icon">
+    <iconset resource="mainwnd.qrc">
+     <normaloff>:/mainWnd/C:/Users/Public/Pictures/Sample Pictures/Chrysanthemum.jpg</normaloff>:/mainWnd/C:/Users/Public/Pictures/Sample Pictures/Chrysanthemum.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>btn1</string>
+   </property>
+   <property name="toolTip">
+    <string>按钮1</string>
+   </property>
+  </action>
+  <action name="actionBtn2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="mainwnd.qrc">
+     <normaloff>:/mainWnd/C:/Users/Public/Pictures/Sample Pictures/Desert.jpg</normaloff>:/mainWnd/C:/Users/Public/Pictures/Sample Pictures/Desert.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>btn2</string>
+   </property>
+   <property name="toolTip">
+    <string>按钮2</string>
+   </property>
+  </action>
+  <action name="actionBtn3">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <activeon>:/mainWnd/C:/Users/Public/Pictures/Sample Pictures/Hydrangeas.jpg</activeon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>btn3</string>
+   </property>
+   <property name="toolTip">
+    <string>按钮3</string>
+   </property>
+  </action>
+  <action name="actionBtn4">
+   <property name="icon">
+    <iconset resource="mainwnd.qrc">
+     <normaloff>:/mainWnd/C:/Users/Public/Pictures/Sample Pictures/Jellyfish.jpg</normaloff>:/mainWnd/C:/Users/Public/Pictures/Sample Pictures/Jellyfish.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>btn4</string>
+   </property>
+   <property name="toolTip">
+    <string>按钮4</string>
+   </property>
+  </action>
+  <action name="actionBtn5">
+   <property name="icon">
+    <iconset resource="mainwnd.qrc">
+     <normaloff>:/mainWnd/C:/Users/Public/Pictures/Sample Pictures/Koala.jpg</normaloff>:/mainWnd/C:/Users/Public/Pictures/Sample Pictures/Koala.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>btn5</string>
+   </property>
+   <property name="toolTip">
+    <string>按钮5</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwnd.qrc"/>
+ </resources>
+ <connections/>
+</ui>

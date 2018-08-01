@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="mainWnd">
+    <file>C:/Users/Public/Pictures/Sample Pictures/Chrysanthemum.jpg</file>
+    <file>C:/Users/Public/Pictures/Sample Pictures/Desert.jpg</file>
+  </qresource>
+</RCC>

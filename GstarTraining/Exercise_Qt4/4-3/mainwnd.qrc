@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="mainWnd">
+    <file>C:/Users/Public/Pictures/Sample Pictures/Chrysanthemum.jpg</file>
+    <file>C:/Users/Public/Pictures/Sample Pictures/Desert.jpg</file>
+    <file>C:/Users/Public/Pictures/Sample Pictures/Hydrangeas.jpg</file>
+    <file>C:/Users/Public/Pictures/Sample Pictures/Jellyfish.jpg</file>
+    <file>C:/Users/Public/Pictures/Sample Pictures/Koala.jpg</file>
+    <file>C:/Users/Public/Pictures/Sample Pictures/Lighthouse.jpg</file>
+    <file>C:/Users/Public/Pictures/Sample Pictures/Penguins.jpg</file>
+    <file>C:/Users/Public/Pictures/Sample Pictures/Tulips.jpg</file>
+  </qresource>
+</RCC>

@@ -18,6 +18,7 @@ void mainWnd::onBtnSortClicked()
     QString line = ui.editLine->text();
     if (line.isEmpty()) return;
 
+    line = line.trimmed();
     QStringList strList = line.split(" ");
     if (strList.isEmpty()) return;
 
