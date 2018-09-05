@@ -10,3 +10,9 @@ XLL           --- Excel XLL加载项试验
 ReuseCOM      --- 包容和聚合方式实现COM复用
 
 OutofProcCOM  --- 进程外COM和Automation、LPC和RPC客户端
+
+GstarTraining --- Windows桌面程序（控件）及ObjectARX训练
+
+SoundPlayer   --- Windows Media Player控件（ActiveX）使用练习
+
+Win32         --- 部分Win32练习题
