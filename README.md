@@ -16,3 +16,5 @@ GstarTraining --- Windows桌面程序（控件）及ObjectARX训练
 SoundPlayer   --- Windows Media Player控件（ActiveX）使用练习
 
 Win32         --- 部分Win32练习题
+
+ImageViewer   --- 图片查看器，使用BitBlt和StretchBlt实现
