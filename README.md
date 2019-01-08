@@ -20,3 +20,5 @@ Win32               --- 部分Win32练习题
 ImageViewer         --- 图片查看器，使用BitBlt和StretchBlt实现
 
 TreeCtrlRecursion   --- Windows树形控件搜索算法，涉及深度优先及广度优先相关内容
+
+MfcPy               --- MFC和Python混合编程项目，以MFC编写界面，Python编写后台加载和保存文件实现的一个文本编辑器
