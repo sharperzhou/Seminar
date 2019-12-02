@@ -28,7 +28,7 @@ namespace AspNetCoreTodo.Controllers
             var model = new ManageUsersViewModel
             {
                 Administrators = admins,
-                everyone = everyone,
+                Everyone = everyone,
             };
             return View(model);
         }

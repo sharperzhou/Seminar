@@ -1,5 +1,8 @@
 debug
+obj
 ipch
+x64/Debug/*
+x64/Release/*
 *.user
 *.ncb
 *.htm
@@ -25,3 +28,5 @@ Drawing1.dwl2
 GeneratedFiles
 *.suo
 *.VC.db
+MfcPy/x64/Release/content.txt
+.idea
