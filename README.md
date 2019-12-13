@@ -22,3 +22,7 @@ The seminar of coding method, topic, or skill
 * [TreeCtrlRecursion](/TreeCtrlRecursion/TreeCtrlRecursion/)   --- Windows树形控件搜索算法，涉及深度优先及广度优先相关内容
 
 * [MfcPy](/MfcPy/MfcPy/)               --- MFC和Python混合编程项目，以MFC编写界面，Python编写后台加载和保存文件实现的一个文本编辑器
+
+* [AspNetCoreTodo](/AspNetCoreTodo)  --- Asp .net core 训练项目
+
+* [StdAsync](/StdAsync) --- C++11 以后异步编程及多线程示例，处理亿级数字求和
