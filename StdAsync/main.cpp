@@ -5,6 +5,8 @@
 #include <random>
 #include <cmath>
 #include <chrono>
+#include <numeric>
+#include <execution>
 
 size_t sum(const std::vector<int> &nums, size_t low, size_t high)
 {
@@ -145,10 +147,32 @@ int main(int, char **)
 
     std::this_thread::sleep_for(10s);
 
+    auto start = std::chrono::high_resolution_clock::now();
+    auto use_accumulate_ret = std::accumulate(nums.begin(), nums.end(), 0ULL);
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration5 = std::chrono::duration<double, std::milli>(end - start).count();
+    std::cout << "std::accumulate result: " << use_accumulate_ret
+              << "\tduration: " << duration5 << " ms"
+              << std::endl;
+
+    std::this_thread::sleep_for(10s);
+
+    start = std::chrono::high_resolution_clock::now();
+    auto use_reduce_ret = std::reduce(std::execution::par, nums.begin(), nums.end(), 0ULL);
+    end = std::chrono::high_resolution_clock::now();
+    auto duration6 = std::chrono::duration<double, std::milli>(end - start).count();
+    std::cout << "std::reduce result    : " << use_reduce_ret
+              << "\tduration: " << duration6 << " ms"
+              << std::endl;
+
+    std::this_thread::sleep_for(10s);
+
     std::cout << std::setprecision(3)
               << "single / async       : " << double(duration2) / duration1 << std::endl
               << "single / task        : " << double(duration2) / duration3 << std::endl
-              << "single / task_thread : " << double(duration2) / duration4 << std::endl;
+              << "single / task_thread : " << double(duration2) / duration4 << std::endl
+              << "single / accumulate  : " << double(duration2) / duration5 << std::endl
+              << "single / std parallel: " << double(duration2) / duration6 << std::endl;
 
     std::cout << "end." << std::endl;
     std::this_thread::sleep_for(10s);
