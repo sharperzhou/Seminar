@@ -26,3 +26,5 @@ The seminar of coding method, topic, or skill
 * [AspNetCoreTodo](/AspNetCoreTodo)  --- Asp .net core 训练项目
 
 * [StdAsync](/StdAsync) --- C++11 以后异步编程及多线程示例，处理亿级数字求和
+
+* [MultiProcessGUI](/MultiProcessGUI) --- Qt版本多进程GUI示例，父进程作为server，创建客户端子进程，客户端的窗口嵌入到服务端进行显示
