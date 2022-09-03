@@ -66,8 +66,9 @@ BOOL FileTreeDialog::OnInitDialog()
     _tcscpy_s(lf.lfFaceName, L"Consolas");
     m_contentEditFont.CreateFontIndirect(&lf);
 
-    auto* contentEdit = GetDlgItem(IDC_EDIT_CONTENT);
+    auto* contentEdit = static_cast<CEdit*>(GetDlgItem(IDC_EDIT_CONTENT));
     contentEdit->SetFont(&m_contentEditFont);
+    contentEdit->SetLimitText(0);
 
     return TRUE; // return TRUE  unless you set the focus to a control
 }
@@ -137,11 +138,12 @@ void FileTreeDialog::OnShowLayout()
 
 void FileTreeDialog::LoadFileTree(const std::filesystem::path& parent, HTREEITEM hParent)
 {
-    for (auto&& entry : std::filesystem::directory_iterator(parent))
+	std::error_code err;
+    for (auto&& entry : std::filesystem::directory_iterator(parent, err))
     {
         const auto& child = entry.path();
         auto* newItem = m_tree.InsertItem(child.filename().wstring().data(), hParent);
-        if (entry.is_directory())
+        if (entry.is_directory(err))
             LoadFileTree(child, newItem);
         m_tree.Expand(newItem, TVE_EXPAND);
     }

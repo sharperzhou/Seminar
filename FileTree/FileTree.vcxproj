@@ -194,6 +194,7 @@
     <ClInclude Include="FileTree.h" />
     <ClInclude Include="FileTreeDialog.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="PathToTreeDialog.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
@@ -202,6 +203,7 @@
   <ItemGroup>
     <ClCompile Include="FileTree.cpp" />
     <ClCompile Include="FileTreeDialog.cpp" />
+    <ClCompile Include="PathToTreeDialog.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

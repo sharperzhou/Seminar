@@ -6,6 +6,7 @@
 #define IDR_MAINFRAME                   128
 #define IDD_DIALOG1                     130
 #define IDD_TEXTTOTREE_DIALOG           130
+#define IDD_PATHTOTREE_DIALOG           132
 #define IDC_EDIT_ROOTPATH               1000
 #define IDC_BTN_CHOOSEFOLDER            1001
 #define IDC_TREE                        1002
@@ -16,14 +17,18 @@
 #define IDC_TREE2                       1007
 #define IDC_EDIT_CONTENT2               1008
 #define IDC_BUTTON_TEXT_TO_TREE         1009
+#define IDC_EDIT_PATh_TREE_PATHS        1010
+#define IDC_TREE1                       1011
+#define IDC_TREE_PATH_TREE_TREE         1011
+#define IDC_BUTTON_PATH_TREE_CONVERT    1012
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        132
+#define _APS_NEXT_RESOURCE_VALUE        134
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1010
+#define _APS_NEXT_CONTROL_VALUE         1013
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

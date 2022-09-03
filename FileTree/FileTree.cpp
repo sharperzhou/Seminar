@@ -6,6 +6,7 @@
 #include "framework.h"
 #include "FileTree.h"
 #include "FileTreeDialog.h"
+#include "PathToTreeDialog.h"
 #include "TextToTreeDialog.h"
 
 #ifdef _DEBUG
@@ -71,6 +72,9 @@ BOOL FileTreeApp::InitInstance()
 	// TODO: You should modify this string to be something appropriate
 	// such as the name of your company or organization
 	SetRegistryKey(_T("Local AppWizard-Generated Applications"));
+
+	PathToTreeDialog pathToTreeDialog;
+	pathToTreeDialog.DoModal();
 
 	FileTreeDialog dlg;
     dlg.DoModal();

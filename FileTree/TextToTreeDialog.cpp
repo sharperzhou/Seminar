@@ -88,6 +88,7 @@ BOOL TextToTreeDialog::OnInitDialog()
     m_content.SetFont(&m_contentEditFont);
 
     m_content.SetWindowText(m_contentRef);
+    m_content.SetLimitText(0);
 
     return TRUE; // return TRUE unless you set the focus to a control
     // EXCEPTION: OCX Property Pages should return FALSE
