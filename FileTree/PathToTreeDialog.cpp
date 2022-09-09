@@ -52,6 +52,7 @@ void PathToTreeDialog::OnClickedButtonPathTreeConvert()
 {
 	// TODO: Add your control notification handler code here
 	m_tree.DeleteAllItems();
+	Cache cache;
 	for (int l = 0; l < m_content.GetLineCount(); l++)
 	{
 		const auto len = m_content.LineLength(m_content.LineIndex(l));
@@ -61,11 +62,11 @@ void PathToTreeDialog::OnClickedButtonPathTreeConvert()
 		m_content.GetLine(l, buffer.get(), len);
 
         std::wstring_view sv{buffer.get(), static_cast<std::size_t>(len)};
-		BuildTree(sv);
+		BuildTree(sv, cache);
 	}
 }
 
-void PathToTreeDialog::BuildTree(std::wstring_view& path, HTREEITEM parent)
+void PathToTreeDialog::BuildTree(std::wstring_view& path, Cache& cache, HTREEITEM parent)
 {
 	path.remove_prefix(min(path.find_first_not_of(WHITE_SPACE), path.size()));
 	if (path.empty()) return;
@@ -75,14 +76,15 @@ void PathToTreeDialog::BuildTree(std::wstring_view& path, HTREEITEM parent)
 	text.TrimRight();
 	if (text.IsEmpty()) return;
 
-	HTREEITEM node = FindItemNoRecursive(parent, text);
+	auto& node = cache[parent][text];
+	// HTREEITEM node = FindItemNoRecursive(parent, text);
 	if (node == nullptr)
 	{
 		node = m_tree.InsertItem(text, parent, TVI_SORT);
 	}
 
 	path.remove_prefix(min(path.find_first_not_of(PATH_SEPARATOR, pos), path.size()));
-	BuildTree(path, node);
+	BuildTree(path, cache, node);
 
 	m_tree.Expand(node, TVE_EXPAND);
 }
